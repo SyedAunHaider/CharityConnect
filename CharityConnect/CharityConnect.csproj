@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk.Web">
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
 
   <PropertyGroup>
     <TargetFramework>netcoreapp3.0</TargetFramework>
@@ -27,13 +27,14 @@
     <None Remove="ClientApp\src\app\app-routing.module.ts" />
     <None Remove="ClientApp\src\app\material.module.ts" />
     <None Remove="ClientApp\src\app\user-grid\user-grid-component.ts" />
-    <None Remove="ClientApp\src\app\user-registration\user-registration.component.ts" />
+    <None Remove="ClientApp\src\app\components\user-registration\user-registration.component.ts" />
   </ItemGroup>
 
   <ItemGroup>
     <TypeScriptCompile Include="ClientApp\src\app\app-routing.module.ts" />
     <TypeScriptCompile Include="ClientApp\src\app\user-grid\user-grid-component.ts" />
-    <TypeScriptCompile Include="ClientApp\src\app\user-registration\user-registration.component.ts" />
+    <TypeScriptCompile Include="ClientApp\src\app\material.module.ts" />
+    <TypeScriptCompile Include="ClientApp\src\app\components\user-registration\user-registration.component.ts" />
   </ItemGroup>
 
   <ItemGroup>
@@ -41,6 +42,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Folder Include="ClientApp\src\app\components\" />
     <Folder Include="ClientApp\src\assets\img\" />
   </ItemGroup>
 
