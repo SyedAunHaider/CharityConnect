@@ -25,12 +25,21 @@
 
   <ItemGroup>
     <None Remove="ClientApp\src\app\app-routing.module.ts" />
+    <None Remove="ClientApp\src\app\material.module.ts" />
     <None Remove="ClientApp\src\app\user-registration\user-registration.component.ts" />
   </ItemGroup>
 
   <ItemGroup>
     <TypeScriptCompile Include="ClientApp\src\app\app-routing.module.ts" />
     <TypeScriptCompile Include="ClientApp\src\app\user-registration\user-registration.component.ts" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\favicon.ico" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="ClientApp\src\assets\img\" />
   </ItemGroup>
 
   <Target Name="DebugEnsureNodeEnv" BeforeTargets="Build" Condition=" '$(Configuration)' == 'Debug' And !Exists('$(SpaRoot)node_modules') ">
