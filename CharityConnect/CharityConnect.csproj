@@ -26,20 +26,31 @@
   <ItemGroup>
     <None Remove="ClientApp\src\app\app-routing.module.ts" />
     <None Remove="ClientApp\src\app\material.module.ts" />
-    <None Remove="ClientApp\src\app\user-registration\user-registration.component.ts" />
   </ItemGroup>
 
   <ItemGroup>
     <TypeScriptCompile Include="ClientApp\src\app\app-routing.module.ts" />
     <TypeScriptCompile Include="ClientApp\src\app\material.module.ts" />
-    <TypeScriptCompile Include="ClientApp\src\app\user-registration\user-registration.component.ts" />
+    <TypeScriptCompile Include="..\..\..\..\1 %2528Personal%2529 Muhammad Danial Shaukat\Projects\CharityConnect\CharityConnect\ClientApp\src\app\components\user-registration\user-registration.component.ts" />
   </ItemGroup>
 
   <ItemGroup>
+    <None Include="..\..\..\..\1 %2528Personal%2529 Muhammad Danial Shaukat\Projects\CharityConnect\CharityConnect\ClientApp\src\app\components\counter\counter.component.html" />
+    <None Include="..\..\..\..\1 %2528Personal%2529 Muhammad Danial Shaukat\Projects\CharityConnect\CharityConnect\ClientApp\src\app\components\counter\counter.component.spec.ts" />
+    <None Include="..\..\..\..\1 %2528Personal%2529 Muhammad Danial Shaukat\Projects\CharityConnect\CharityConnect\ClientApp\src\app\components\counter\counter.component.ts" />
+    <None Include="..\..\..\..\1 %2528Personal%2529 Muhammad Danial Shaukat\Projects\CharityConnect\CharityConnect\ClientApp\src\app\components\fetch-data\fetch-data.component.html" />
+    <None Include="..\..\..\..\1 %2528Personal%2529 Muhammad Danial Shaukat\Projects\CharityConnect\CharityConnect\ClientApp\src\app\components\fetch-data\fetch-data.component.ts" />
+    <None Include="..\..\..\..\1 %2528Personal%2529 Muhammad Danial Shaukat\Projects\CharityConnect\CharityConnect\ClientApp\src\app\components\home\home.component.html" />
+    <None Include="..\..\..\..\1 %2528Personal%2529 Muhammad Danial Shaukat\Projects\CharityConnect\CharityConnect\ClientApp\src\app\components\home\home.component.ts" />
+    <None Include="..\..\..\..\1 %2528Personal%2529 Muhammad Danial Shaukat\Projects\CharityConnect\CharityConnect\ClientApp\src\app\components\nav-menu\nav-menu.component.css" />
+    <None Include="..\..\..\..\1 %2528Personal%2529 Muhammad Danial Shaukat\Projects\CharityConnect\CharityConnect\ClientApp\src\app\components\nav-menu\nav-menu.component.html" />
+    <None Include="..\..\..\..\1 %2528Personal%2529 Muhammad Danial Shaukat\Projects\CharityConnect\CharityConnect\ClientApp\src\app\components\nav-menu\nav-menu.component.ts" />
+    <None Include="..\..\..\..\1 %2528Personal%2529 Muhammad Danial Shaukat\Projects\CharityConnect\CharityConnect\ClientApp\src\app\components\user-registration\user-registration.component.html" />
     <None Include="wwwroot\favicon.ico" />
   </ItemGroup>
 
   <ItemGroup>
+    <Folder Include="ClientApp\src\app\components\" />
     <Folder Include="ClientApp\src\assets\img\" />
   </ItemGroup>
 
