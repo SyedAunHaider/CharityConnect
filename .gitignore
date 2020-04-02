@@ -2,8 +2,6 @@
 # This .gitignore file was automatically created by Microsoft(R) Visual Studio.
 ################################################################################
 
-/.vs/slnx.sqlite
-/.vs/ProjectSettings.json
 /.vs/CharityConnect/v16/Server/sqlite3/storage.ide-wal
 /.vs/CharityConnect/v16/Server/sqlite3/storage.ide-shm
 /.vs/CharityConnect/v16/Server/sqlite3/storage.ide
@@ -14,3 +12,6 @@
 /.vs/CharityConnect/DesignTimeBuild/.dtbcache
 /.vs/CharityConnect/DesignTimeBuild
 /.vs/CharityConnect/config/applicationhost.config
+/.vs/CharityConnect/config
+/.vs/ProjectSettings.json
+/.vs/slnx.sqlite
