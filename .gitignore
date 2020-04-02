@@ -13,3 +13,5 @@
 /.vs/CharityConnect/DesignTimeBuild
 /.vs/CharityConnect/config/applicationhost.config
 /.vs/CharityConnect/config
+/.vs/ProjectSettings.json
+/.vs/slnx.sqlite
