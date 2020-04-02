@@ -1,2 +1,136 @@
-<h1>Hello, User!</h1>
-<p>Welcome to our Registration Page.. To-Do</p>
+<!-- Card container that binds all togather -->
+<mat-card>
+  <!-- Title of an Card -->
+  <mat-card-title>
+    Registration form for Donor/Recipient
+  </mat-card-title>
+
+  <!-- Actual content starts from here -->
+  <mat-card-content>
+    <form [formGroup]="regiForm" (ngSubmit)="onFormSubmit(regiForm.value)">
+      <table>
+        <tr>
+          <td colspan="4">
+            <mat-form-field class="demo-full-width">
+              <input formControlName="FullName" matInput placeholder="Full Name" />
+            </mat-form-field>
+            <mat-error>
+              <span *ngIf="!regiForm.get('FullName').valid && regiForm.get('FullName').touched">Please enter your <strong>Full Name</strong> !!!</span>
+            </mat-error>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="4">
+            <mat-form-field class="demo-full-width">
+              <mat-label>CNIC</mat-label>
+              <input formControlName="Cnic" matInput placeholder="00000-0000000-0" mask="00000-0000000-0" />
+            </mat-form-field>
+            <mat-error>
+              <span *ngIf="!regiForm.get('Cnic').valid && regiForm.get('Cnic').touched">Please enter valid <strong>CNIC</strong> !!!</span>
+            </mat-error>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="4">
+            <mat-form-field class="demo-full-width">
+              <mat-label>Mobile Number</mat-label>
+              <span matPrefix>+92 &nbsp;</span>
+              <input type="tel" matInput formControlName="Mobile" placeholder="313 1234567" mask="000 0000000" />
+
+            </mat-form-field>
+            <mat-error>
+              <span *ngIf="!regiForm.get('Mobile').valid && regiForm.get('Mobile').touched">Please enter valid <strong>Mobile Number</strong> !!!</span>
+            </mat-error>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="4">
+            <mat-radio-group formControlName="DonationType" (change)="typeOnChange($event)">
+              <mat-radio-button value="Donor">Donor</mat-radio-button>
+              <mat-radio-button value="Recipient">Recipient</mat-radio-button>
+            </mat-radio-group>
+            <mat-error>
+              <span *ngIf="!regiForm.get('DonationType').valid && regiForm.get('DonationType').touched">Please select any <strong>Type</strong> !!!</span>
+            </mat-error>
+          </td>
+        </tr>
+        <tr *ngIf="!IsDonor">
+          <td colspan="4">
+            <mat-form-field class="demo-full-width">
+              <input type="number" matInput formControlName="FamilyMembers" placeholder="Family Member Count" min="0" max="100" />
+
+            </mat-form-field>
+            <mat-error>
+              <span *ngIf="!regiForm.get('FamilyMembers').valid && regiForm.get('FamilyMembers').touched">Please enter valid <strong>Family Member Count</strong> !!!</span>
+            </mat-error>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="4">
+            <mat-form-field>
+              <mat-select formControlName="Province" placeholder="Province">
+                <mat-option>-- Select Any --</mat-option>
+                <mat-option value="C#Corner">C#Corner</mat-option>
+                <mat-option value="C#Corner">C#Corner</mat-option>
+                <mat-option value="C#Corner">C#Corner</mat-option>
+              </mat-select>
+            </mat-form-field>
+            <mat-error>
+              <span *ngIf="!regiForm.get('Province').valid && regiForm.get('Province').touched">Please select any <strong>Province</strong> !!!</span>
+            </mat-error>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="4">
+            <mat-form-field>
+              <mat-select formControlName="City" placeholder="City">
+                <mat-option>-- Select Any --</mat-option>
+                <mat-option value="C#Corner">C#Corner</mat-option>
+                <mat-option value="C#Corner">C#Corner</mat-option>
+                <mat-option value="C#Corner">C#Corner</mat-option>
+              </mat-select>
+            </mat-form-field>
+            <mat-error>
+              <span *ngIf="!regiForm.get('City').valid && regiForm.get('City').touched">Please select any <strong>City</strong> !!!</span>
+            </mat-error>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="4">
+            <mat-form-field>
+              <mat-select formControlName="NationalAssembly" placeholder="National Assembly Constituency">
+                <mat-option>-- Select Any --</mat-option>
+                <mat-option value="C#Corner">C#Corner</mat-option>
+                <mat-option value="C#Corner">C#Corner</mat-option>
+                <mat-option value="C#Corner">C#Corner</mat-option>
+              </mat-select>
+            </mat-form-field>
+            <mat-error>
+              <span *ngIf="!regiForm.get('NationalAssembly').valid && regiForm.get('NationalAssembly').touched">Please select any <strong>National Assembly Constituency</strong> !!!</span>
+            </mat-error>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="4">
+            <mat-form-field>
+              <mat-select formControlName="ProvincialAssembly" placeholder="Provincial Assembly Constituency">
+                <mat-option>-- Select Any --</mat-option>
+                <mat-option value="C#Corner">C#Corner</mat-option>
+                <mat-option value="C#Corner">C#Corner</mat-option>
+                <mat-option value="C#Corner">C#Corner</mat-option>
+              </mat-select>
+            </mat-form-field>
+            <mat-error>
+              <span *ngIf="!regiForm.get('ProvincialAssembly').valid && regiForm.get('ProvincialAssembly').touched">Please select any <strong>Provincial Assembly Constituency</strong> !!!</span>
+            </mat-error>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2" class="content-center">
+            <button mat-raised-button color="accent" [disabled]="!regiForm.valid">Submit</button>
+          </td>
+        </tr>
+      </table>
+    </form>
+  </mat-card-content>
+</mat-card> 
